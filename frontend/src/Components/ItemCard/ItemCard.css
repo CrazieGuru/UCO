@@ -1,0 +1,67 @@
+.card{
+    width: 270px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 1px solid rgb(202, 201, 201);
+}
+.card .item-img{
+    min-width: 270px;
+    min-height: 60%;
+}
+.item-img img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+.card .item-name{
+    padding:10px 10px;
+    width: 100%;
+    text-align: start;
+    overflow: hidden;
+    text-wrap: wrap;
+    color: rgb(54, 54, 54);
+    font-size: 18px;
+    font-weight: 600;
+    height: 100%;
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+.card .amount-add{
+    display: flex;
+    padding: 15px 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.amount-add .amount{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.amount .a-amount{
+    color: rgb(0, 183, 0);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.amount .mrp-amount{
+    color: rgb(79, 79, 79);
+    text-decoration-line:line-through;
+    font-size: 14px;
+    font-weight: 500;
+}
+.amount-add button{
+    padding:3px 25px;
+    border: 2px solid rgba(111, 168, 111, 0.333);
+    outline: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: rgb(0, 183, 0);
+    background-color: rgba(198, 219, 213, 0.473);
+    cursor: pointer;
+}

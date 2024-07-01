@@ -1,0 +1,37 @@
+.zone{
+    width: 90%;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+.zone .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    font-size: 28px;
+    font-weight: 400;
+    color: rgb(125, 125, 125);
+    border-bottom: 1px solid rgb(125, 125, 125);
+}
+.title .title-name{
+    height: 100%;
+    border-bottom: 3px solid rgb(0, 183, 0);
+}
+.title .title-name span{
+    color: rgb(0, 183, 0);
+}
+.title .view-all{
+    font-size: 16px;
+    cursor: pointer;
+}
+.zone .items{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    gap: 40px;
+}
