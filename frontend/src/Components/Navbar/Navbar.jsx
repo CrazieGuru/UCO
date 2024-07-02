@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './Navbar.css'
 
 const Navbar = () => {
-    const orders = true
+    const orders = false
     const categories = ["Fruits & Vegitables","Dairy & Breakfast","Egg,Meat & fish","Bath & Body","Cold drinks & Juice","Snacks & Munchies","Icy Delights"]
   return (
     <>
@@ -37,16 +37,6 @@ const Navbar = () => {
                     <i className="fa fa-cart-shopping"></i>
                     <p>Cart</p>
                 </div>
-            </div>
-        </div>
-        <div className="nav-bottom">
-            <div className="categories">
-                {categories.map((val,inx)=>(
-                    <div key={inx} className="category">
-                        <p className="cate-name">{val}</p>
-                        <i className='fa fa-chevron-down'></i>
-                    </div>
-                ))}
             </div>
         </div>
     </div>

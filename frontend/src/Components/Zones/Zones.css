@@ -1,10 +1,10 @@
 .zones{
     width: 90%;
-    margin-top: 35px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
 }
 .zones .zone{
     margin-top: 35px;
@@ -17,8 +17,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 50px;
-    font-size: 28px;
+    height: 40px;
+    font-size: 24px;
     font-weight: 400;
     color: rgb(125, 125, 125);
     border-bottom: 1px solid rgb(125, 125, 125);
@@ -38,5 +38,5 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 }

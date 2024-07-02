@@ -23,7 +23,7 @@ const Banner = () => {
         <Slider {...settings}>
           {banners.map((item, ind) => {
             return (
-                <img src={item} alt="" />
+                <img id='banner-img' src={item} alt="" />
             );
           })}
         </Slider>

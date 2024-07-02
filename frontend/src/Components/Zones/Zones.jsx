@@ -1,27 +1,34 @@
 import React from "react";
-import "./Offers.css";
+import ItemCard from "../ItemCard/ItemCard";
+import './Zones.css'
 
-const Offers = () => {
+
+const Zones = () => {
   const zones_data = {
     offer_zone: {
       title_name: "Supersaver",
       title_sub_name: "Up to 50% Off",
-      items: 10,
+      items: 12,
     },
     fruit_veg_zone: {
       title_name: "Vegitables & Fruits",
       title_sub_name: "",
-      items: 5,
+      items: 6,
     },
     juice_zone: {
       title_name: "Cold Drinks & Juices",
       title_sub_name: "Up to 30% Off",
-      items: 5,
+      items: 6,
     },
     top_zone: {
       title_name: "Top",
       title_sub_name: "Selling",
-      items: 5,
+      items: 6,
+    },
+    test_zone: {
+      title_name: "Recent Orders",
+      title_sub_name: "",
+      items: 6,
     },
   };
 
@@ -58,7 +65,5 @@ const Offers = () => {
     </>
   );
 };
-import "./Offers.css";
-import ItemCard from "../../ItemCard/ItemCard";
 
-export default Offers;
+export default Zones;

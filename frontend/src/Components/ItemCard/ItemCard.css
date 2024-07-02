@@ -1,14 +1,20 @@
 .card{
-    width: 240px;
-    height: 320px;
+    width: 200px;
+    height: 260px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 20px;
     border: 1px solid rgb(202, 201, 201);
+    cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.01);
+    transition: .3s ease-in-out;
+    box-shadow: 0px 0px 10px rgb(117, 117, 117);
 }
 .card .item-img{
-    min-width: 240px;
+    min-width: 200px;
     min-height: 60%;
     position: relative;
 }
@@ -18,7 +24,7 @@
     right: 0;
     background-color: rgb(0, 183, 0);
     padding:10px 10px;
-    font-size: 14px;
+    font-size: 12px;
     color: white;
     text-align: center;
     border-top-right-radius: 20px;
@@ -40,14 +46,14 @@
     overflow: hidden;
     text-wrap: wrap;
     color: rgb(54, 54, 54);
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 500;
     height: 100%;
-    border-bottom: 1px solid rgb(212, 212, 212);
+    border-bottom: 1px solid rgb(230, 230, 230);
 }
 .card .amount-add{
     display: flex;
-    padding: 15px 10px;
+    padding: 10px 10px;
     align-items: center;
     justify-content: space-between;
 }
@@ -55,26 +61,28 @@
     width: 50%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .amount .a-amount{
     color: rgb(0, 183, 0);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
 }
 
 .amount .mrp-amount{
-    color: rgb(79, 79, 79);
+    color: rgb(117, 117, 117);
     text-decoration-line:line-through;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 600;
+    
 }
 .amount-add button{
-    padding:3px 25px;
+    width: 60px;
+    height: 25px;
+    text-align: center;
     border: 2px solid rgba(111, 168, 111, 0.333);
-    outline: none;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 14px;
     color: rgb(0, 183, 0);
     background-color: rgba(198, 219, 213, 0.473);
     cursor: pointer;
