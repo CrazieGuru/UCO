@@ -1,5 +1,12 @@
-.zone{
+.zones{
     width: 90%;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+}
+.zones .zone{
     margin-top: 35px;
     display: flex;
     flex-direction: column;
@@ -28,10 +35,8 @@
     cursor: pointer;
 }
 .zone .items{
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: start;
-    gap: 40px;
+    gap: 65px;
 }
