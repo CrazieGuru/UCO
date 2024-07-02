@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './Navbar.css'
 
 const Navbar = () => {
-    const orders = false
+    const orders = true
     const categories = ["Fruits & Vegitables","Dairy & Breakfast","Egg,Meat & fish","Bath & Body","Cold drinks & Juice","Snacks & Munchies","Icy Delights"]
   return (
     <>

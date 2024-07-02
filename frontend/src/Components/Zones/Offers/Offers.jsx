@@ -18,6 +18,11 @@ const Offers = () => {
       title_sub_name: "Up to 30% Off",
       items: 5,
     },
+    top_zone: {
+      title_name: "Top",
+      title_sub_name: "Selling",
+      items: 5,
+    },
   };
 
   const to_list = (num) =>{

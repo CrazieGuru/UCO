@@ -1,13 +1,14 @@
 import React from "react";
 import "./ItemCard.css";
-import img from "../../assets/images/banner1.jpg";
+import pro_img from '../../assets/images/item.png'
 
 const ItemCard = () => {
   return (
     <>
       <div className="card">
         <div className="item-img">
-          <img src={img} alt="" />
+          <img src={pro_img} alt="" />
+          <p className="offer-label">20%</p>
         </div>
         <p className="item-name">Go Cheese Slices 200g</p>
         <div className="amount-add">
