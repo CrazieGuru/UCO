@@ -70,6 +70,7 @@
 }
 .search-bar input{
     border-radius: 10px;
+    padding-right:10px ;
     background-color: transparent;
     font-size: 16px;
     width: 100%;
@@ -113,4 +114,72 @@ i{
 hr{
     width: 1px;
     height: 25px;
+}
+
+.logo .profile-cart-m{
+    display: none;
+}
+@media screen and (max-width:514px) {
+    .order-options .order-option:nth-child(1),
+    .order-options .order-option:nth-child(3){
+        display: none;
+    }
+    .order-track{
+        display: 100%;
+        justify-content: space-between;
+        padding:20px 10px;
+        font-size: 13px;
+    }
+    .order-option:nth-child(2){
+        border-right: none;
+    }
+    .nav-top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        position: relative;
+    }
+    .nav-top .logo{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        flex-direction: row;
+    }
+    .logo .brand-name{
+        font-size: 16px;
+    }
+    .sub-name{
+        display: none;
+    }
+    .nav-top .search-bar{
+        width: 350px;
+    }
+    .search-bar input{
+        font-size: 13px;
+    }
+    .logo .profile-cart-m{
+        display: flex;
+        justify-content: space-around;
+        width: 150px;
+        gap: 10px;
+    }
+    .profile-cart-m .profile, .profile-cart-m .cart{
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+    .profile-cart-m .profile p,.profile-cart-m .cart p{
+        font-size: 13px;
+        text-align: center;
+    }
+    hr{
+        display: none;
+    }
+    .nav-top .profile-cart{
+        display: none;
+    }
+
 }

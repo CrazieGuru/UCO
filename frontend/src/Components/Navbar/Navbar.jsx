@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './Navbar.css'
 
 const Navbar = () => {
-    const orders = false
+    const orders = true
     const categories = ["Fruits & Vegitables","Dairy & Breakfast","Egg,Meat & fish","Bath & Body","Cold drinks & Juice","Snacks & Munchies","Icy Delights"]
   return (
     <>
@@ -22,6 +22,17 @@ const Navbar = () => {
             <div className="logo">
                 <p className="brand-name">UCO <span>Deliveries</span></p>
                 <p className="sub-name">Fast and smooth delivery at your home</p>
+                <div className="profile-cart-m">
+                <div className="profile">
+                    <i className='fa fa-user'></i>
+                    <p>Login</p>
+                </div>
+                <hr />
+                <div className="cart">
+                    <i className="fa fa-cart-shopping"></i>
+                    <p>Cart</p>
+                </div>
+            </div>
             </div>
             <div className="search-bar">
                 <i className='fa fa-search'></i>

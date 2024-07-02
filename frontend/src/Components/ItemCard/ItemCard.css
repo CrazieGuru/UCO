@@ -87,3 +87,44 @@
     background-color: rgba(198, 219, 213, 0.473);
     cursor: pointer;
 }
+
+@media screen and (max-width:514px) {
+    .card{
+        width: 160px;
+        height: 220px;
+        border-radius: 10px;
+    }   
+    .card .item-img{
+        min-width: 160px;
+        min-height: 60%;
+        position: relative;
+    }
+    .item-img .offer-label{
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .item-img img{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .card .item-name{
+        padding:5px 5px;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .card .amount-add{
+        display: flex;
+        padding: 10px 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .amount .a-amount{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    
+    .amount .mrp-amount{
+        font-size: 10px;
+        font-weight: 700;
+    }
+}

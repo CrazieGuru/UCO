@@ -1,4 +1,4 @@
-.zones{
+.zones {
     width: 90%;
     margin-top: 10px;
     display: flex;
@@ -6,14 +6,16 @@
     justify-content: center;
     gap: 30px;
 }
-.zones .zone{
+
+.zones .zone {
     margin-top: 35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 40px;
 }
-.zone .title{
+
+.zone .title {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,20 +25,53 @@
     color: rgb(125, 125, 125);
     border-bottom: 1px solid rgb(125, 125, 125);
 }
-.title .title-name{
+
+.title .title-name {
     height: 100%;
     border-bottom: 3px solid rgb(0, 183, 0);
 }
-.title .title-name span{
+
+.title .title-name span {
     color: rgb(0, 183, 0);
 }
-.title .view-all{
+
+.title .view-all {
     font-size: 16px;
     cursor: pointer;
 }
-.zone .items{
+
+.zone .items {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 30px;
+}
+
+@media screen and (max-width:514px) {
+    .zones {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+    .zones .zone {
+        margin-top: 20px;
+        gap: 20px;
+    }
+    .zone .title {
+        height: 32px;
+        font-size: 18px;
+    }
+    .title .view-all {
+        height: 32px;
+        text-align: center;
+        line-height: 32px;
+        font-size: 14px;
+    }
+    .zone .items {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 15px;
+    }
 }
