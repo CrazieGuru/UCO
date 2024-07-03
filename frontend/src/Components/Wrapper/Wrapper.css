@@ -1,0 +1,40 @@
+.wrappers {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+.wrapper {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px 5px;
+    gap: 10px;
+}
+
+.wrapper img {
+    width: 40px;
+}
+
+@media screen and (max-width:514px) {
+    .wrappers {
+        width: 100%;
+        gap: 10px;
+        margin-top: 0;
+        flex-wrap: wrap;
+    }
+
+    .wrapper {
+        width: 180px;
+        align-items: center;
+        border-radius: 10px;
+        padding: 20px 5px;
+        gap: 10px;
+        font-size: 12px;
+    }
+}

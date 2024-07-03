@@ -56,7 +56,7 @@
 
     .zones .zone {
         margin-top: 20px;
-        gap: 30px;
+        gap: 20px;
     }
     .zone .title {
         height: 32px;
@@ -69,9 +69,11 @@
         font-size: 14px;
     }
     .zone .items {
+        width: 100%;
+        padding: 20px 10px;
         display: flex;
-        flex-wrap: wrap;
-        align-items: center;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
         gap: 20px;
     }
 }
