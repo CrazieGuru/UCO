@@ -5,7 +5,7 @@ import pro_img from '../../assets/images/item.png'
 const ItemCard = () => {
   return (
     <>
-      <div className="card">
+      <a className="card" href="/product">
         <div className="item-img">
           <img src={pro_img} alt="" />
           <p className="offer-label">20%</p>
@@ -18,7 +18,7 @@ const ItemCard = () => {
           </div>
           <button>Add</button>
         </div>
-      </div>
+      </a>
     </>
   );
 };

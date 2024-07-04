@@ -3,34 +3,8 @@ import ItemCard from "../ItemCard/ItemCard";
 import './Zones.css'
 
 
-const Zones = () => {
-  const zones_data = {
-    offer_zone: {
-      title_name: "Supersaver",
-      title_sub_name: "Up to 50% Off",
-      items: 12,
-    },
-    fruit_veg_zone: {
-      title_name: "Vegitables & Fruits",
-      title_sub_name: "",
-      items: 6,
-    },
-    juice_zone: {
-      title_name: "Cold Drinks & Juices",
-      title_sub_name: "Up to 30% Off",
-      items: 6,
-    },
-    top_zone: {
-      title_name: "Top",
-      title_sub_name: "Selling",
-      items: 6,
-    },
-    test_zone: {
-      title_name: "Recent Orders",
-      title_sub_name: "",
-      items: 6,
-    },
-  };
+const Zones = ({data}) => {
+  
 
   const to_list = (num) =>{
     const list = []
@@ -42,8 +16,8 @@ const Zones = () => {
   return (
     <>
       <div className="zones">
-        {Object.values(zones_data).map((item,index)=>(
-        <div className="zone">
+        {Object.values(data).map((item,index)=>(
+        <div className="zone" key={index}>
           <div className="title">
             <p className="title-name">
               {item.title_name} <span>{item.title_sub_name}</span>
