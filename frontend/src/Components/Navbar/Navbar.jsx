@@ -42,15 +42,15 @@ const Navbar = () => {
             </a>
             <p className="sub-name">Fast and smooth delivery at your home</p>
             <div className="profile-cart-m">
-              <div className="profile">
+              <a className="profile">
                 <i className="fa fa-user"></i>
                 <a href=""><p>Login</p></a>
-              </div>
+              </a>
               <hr />
-              <div className="cart">
+              <a href="/cart" className="cart">
                 <i className="fa fa-cart-shopping"></i>
-                <a href="/cart"><p>Cart</p></a>
-              </div>
+                <p>Cart</p>
+              </a>
             </div>
           </div>
           <div className="search-bar">
@@ -63,15 +63,15 @@ const Navbar = () => {
             />
           </div>
           <div className="profile-cart">
-            <div className="profile">
+            <a className="profile">
               <i className="fa fa-user"></i>
               <a href=""><p>Login</p></a>
-            </div>
+            </a>
             <hr />
-            <div className="cart">
+            <a href="/cart" className="cart">
               <i className="fa fa-cart-shopping"></i>
-              <a href="/cart"><p>Cart</p></a>
-            </div>
+              <p>Cart</p>
+            </a>
           </div>
         </div>
       </div>
