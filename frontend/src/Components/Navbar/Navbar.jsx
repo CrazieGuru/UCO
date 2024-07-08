@@ -44,12 +44,12 @@ const Navbar = () => {
             <div className="profile-cart-m">
               <div className="profile">
                 <i className="fa fa-user"></i>
-                <p>Login</p>
+                <a href=""><p>Login</p></a>
               </div>
               <hr />
               <div className="cart">
                 <i className="fa fa-cart-shopping"></i>
-                <p>Cart</p>
+                <a href="/cart"><p>Cart</p></a>
               </div>
             </div>
           </div>
@@ -65,12 +65,12 @@ const Navbar = () => {
           <div className="profile-cart">
             <div className="profile">
               <i className="fa fa-user"></i>
-              <p>Login</p>
+              <a href=""><p>Login</p></a>
             </div>
             <hr />
             <div className="cart">
               <i className="fa fa-cart-shopping"></i>
-              <p>Cart</p>
+              <a href="/cart"><p>Cart</p></a>
             </div>
           </div>
         </div>
