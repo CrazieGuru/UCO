@@ -3,16 +3,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
-  const orders = true;
-  const categories = [
-    "Fruits & Vegitables",
-    "Dairy & Breakfast",
-    "Egg,Meat & fish",
-    "Bath & Body",
-    "Cold drinks & Juice",
-    "Snacks & Munchies",
-    "Icy Delights",
-  ];
+  const orders = false;
   return (
     <>
       {orders && (
@@ -24,11 +15,11 @@ const Navbar = () => {
             </div>
             <div className="order-option">
               <i class="fa fa-truck"></i>
-              <Link to={"/trace"}>Trace your order</Link>
+              <Link to={"/orders"}>Trace your order</Link>
             </div>
             <div className="order-option">
               <i class="fa fa-tags"></i>
-              <Link to={"/offers"}>All Offers</Link>
+              <Link to={"/"}>All Offers</Link>
             </div>
           </div>
         </div>
@@ -63,14 +54,24 @@ const Navbar = () => {
             />
           </div>
           <div className="profile-cart">
-            <a className="profile">
+            <a className="home link">
+              <i className="fa fa-home"></i>
+              <a href="/"><p>Home</p></a>
+            </a>
+            <hr />
+            <a className="profile link">
               <i className="fa fa-user"></i>
               <a href=""><p>Login</p></a>
             </a>
             <hr />
-            <a href="/cart" className="cart">
+            <a href="/cart" className="cart link">
               <i className="fa fa-cart-shopping"></i>
               <p>Cart</p>
+            </a>
+            <hr />
+            <a href="/orders" className="cart link">
+            <i class="fa fa-clipboard"></i>
+              <p>Orders</p>
             </a>
           </div>
         </div>

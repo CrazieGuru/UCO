@@ -1,10 +1,13 @@
 import React from "react";
 import "./Cart.css";
 import i_img from "../../assets/images/item.png";
+import Navbar from "../../Components/Navbar/Navbar";
+import Footer from "../../Components/Footer/Footer";
 
 const Cart = () => {
   return (
     <>
+    <Navbar/>
       <div className="cart-container">
         <div className="cart-items">
           <div className="cart-item">
@@ -100,10 +103,11 @@ const Cart = () => {
           </div>
           <div className="continue-proceed">
             <a href="/" className="btn" name="continue-shop" id="continue-shop">Continue Shopping</a>
-            <a className="btn" name="procced" id="proceed">Procced with $80.40</a>
+            <a href="/checkout" className="btn"  name="procced" id="proceed">Procced with $80.40</a>
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

@@ -2,10 +2,12 @@
     width: 100%;
     background-color: orange;
     display: flex;
+    position: static;
+    top: 0;
     align-items: center;
     padding: 0 10%;
     justify-content: space-between;
-    height: 35px;
+    height: 40px;
 }
 
 .order-track .minute-status{
@@ -27,12 +29,12 @@
     color: rgb(113, 113, 113);
 }
 .navbar{
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     background-color: rgb(23, 23, 23);
     padding: 10px 0;
-    gap: 10px;
-    width: 100%;
 }
 .navbar .nav-top{
     display: flex;
@@ -88,29 +90,25 @@ i{
 }
 
 .navbar .profile-cart{
-    width: 220px;
+    width: 280px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     gap: 10px;
 }
-.profile-cart .profile{
+.profile-cart .link{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
-.profile p,.cart p{
+.profile p,.cart p,.home p{
     font-size: 16px;
     font-weight: 600;
     color: white;
 }
-.profile-cart .cart{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
+
 hr{
     width: 1px;
     height: 25px;

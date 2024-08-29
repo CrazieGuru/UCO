@@ -89,7 +89,7 @@
     display: grid;
     padding: 5px 10px;
     grid-template-columns: 6fr 1fr;
-    border-bottom: 2px dashed green ;
+    border-bottom: 1px dashed rgba(0, 128, 0, 0.512) ;
 }
 .row .item-total-name,.gst-total-name,.delivery-total-name,.discount-total-name{
     display: grid;

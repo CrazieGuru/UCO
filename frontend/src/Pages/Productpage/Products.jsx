@@ -2,17 +2,20 @@ import React from "react";
 import "./Products.css";
 import product_img from "../../assets/images/item.png";
 import Zones from "../../Components/Zones/Zones";
+import Navbar from "../../Components/Navbar/Navbar";
+import Footer from "../../Components/Footer/Footer";
 
 const Products = () => {
   const related_data = [
     {
       title_name: "Related Products",
       title_sub_name: "",
-      items: 6,
+      items: 7,
     }
   ]
   return (
     <>
+    <Navbar/>
       <div className="product-container">
         <div className="product">
           <div className="product-img">
@@ -181,6 +184,7 @@ const Products = () => {
         </div>
         <Zones data={related_data}/>
       </div>
+      <Footer/>
     </>
   );
 };
